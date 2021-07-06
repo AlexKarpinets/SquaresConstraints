@@ -16,19 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="50" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTP-yh-IRT" userLabel="redView">
-                                <rect key="frame" x="10" y="54" width="370" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="50" translatesAutoresizingMaskIntoConstraints="NO" id="pTP-yh-IRT" userLabel="redView">
+                                <rect key="frame" x="10" y="54" width="370" height="375"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="50" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-c6-Szg" userLabel="blueView">
-                                <rect key="frame" x="10" y="440" width="370" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="50" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-c6-Szg" userLabel="blueView">
+                                <rect key="frame" x="10" y="445" width="370" height="375"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICJ-c6-Szg" secondAttribute="trailing" constant="10" id="FLW-P9-UJ7"/>
+                            <constraint firstItem="ICJ-c6-Szg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="HYN-91-XQk"/>
+                            <constraint firstItem="ICJ-c6-Szg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="OaU-ap-th0"/>
+                            <constraint firstItem="ICJ-c6-Szg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QwY-2i-XIa"/>
+                            <constraint firstItem="pTP-yh-IRT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ZB2-48-QJ5"/>
+                            <constraint firstItem="pTP-yh-IRT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azb-Wq-h47"/>
+                            <constraint firstItem="ICJ-c6-Szg" firstAttribute="height" secondItem="pTP-yh-IRT" secondAttribute="height" id="cVE-b1-za4"/>
+                            <constraint firstItem="pTP-yh-IRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="eyG-Ca-ZGl"/>
+                            <constraint firstItem="ICJ-c6-Szg" firstAttribute="top" secondItem="pTP-yh-IRT" secondAttribute="bottom" constant="16" id="xG5-ie-bfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pTP-yh-IRT" secondAttribute="trailing" constant="10" id="z3R-wt-7dq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
